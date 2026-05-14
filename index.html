@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Taller Mecánica Rápida</title>
 
 <style>
 
-body {
+body{
 font-family: Arial, sans-serif;
 margin: 0;
 background-image: url("imagenes/fondo.jpg");
@@ -16,49 +19,74 @@ background-repeat: no-repeat;
 color: black;
 }
 
-header {
+
+header{
 background-color: #000000;
 color: white;
 text-align: center;
-padding: 30px;
+padding: 30px 20px;
 }
 
-nav {
+header h1{
+margin-bottom: 10px;
+font-size: 40px;
+letter-spacing: 2px;
+}
+
+header p{
+max-width: 900px;
+margin: auto;
+line-height: 1.8;
+}
+
+
+
+nav{
 background-color: #D70101;
-padding: 12px;
+padding: 15px;
 text-align: center;
+position: sticky;
+top: 0;
+z-index: 1000;
 }
 
-nav a {
+nav a{
 color: white;
 text-decoration: none;
-margin: 12px;
+margin: 15px;
 font-weight: bold;
 transition: 0.3s;
+font-size: 17px;
 }
 
-nav a:hover {
+nav a:hover{
 color: #FFC300;
 }
 
-.seccion {
-margin: 40px;
-background-color: rgba(242, 242, 242, 0.9);
-padding: 20px;
-border-radius: 10px;
+
+
+.seccion{
+margin: 40px auto;
+width: 85%;
+background-color: rgba(242,242,242,0.92);
+padding: 25px;
+border-radius: 12px;
 box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
 }
 
 h2{
 border-left: 6px solid #D70101;
 padding-left: 10px;
+margin-bottom: 20px;
 }
 
 p{
-line-height: 1.7;
+line-height: 1.8;
+font-size: 17px;
 }
 
-img {
+
+img{
 margin: 10px;
 border-radius: 8px;
 max-width: 100%;
@@ -69,26 +97,50 @@ img:hover{
 transform: scale(1.02);
 }
 
-.banner-taller {
-width: 87%;
-border-radius: 10px;
-display: block;
+.banner-taller{
+width: 85%;
+height: auto;
+margin-top: 20px;
+box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
 }
+
 
 ul{
 line-height: 2;
+font-size: 17px;
 }
+
 
 iframe{
 border-radius: 10px;
+max-width: 100%;
 }
 
-footer{
-background-color:#000;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
+
+
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+header h1{
+font-size: 28px;
+}
+
+nav a{
+display: block;
+margin: 10px 0;
+}
+
+.seccion{
+width: 92%;
+}
+
+iframe{
+width: 100%;
+height: 250px;
+}
+
 }
 
 </style>
@@ -108,9 +160,7 @@ de fallas. Contamos con técnicos capacitados y herramientas
 modernas para dejar tu vehículo en las mejores condiciones.
 </p>
 
-<marquee> 
-
-🚗 Bienvenido a Taller Mecánica Rápida | Servicio profesional y rápido 🔧
+<marquee>🚗 Bienvenido a Taller Mecánica Rápida | Servicio profesional y rápido 🔧
 
 </marquee>
 
@@ -126,7 +176,7 @@ modernas para dejar tu vehículo en las mejores condiciones.
 </nav>
 
 <center>
-<img src="hero1.jpg" alt="Banner del taller" width="84%" height="535" class="banner-taller">
+<img src="hero1.jpg" alt="Banner del taller" class="banner-taller">
 </center>
 
 <div class="seccion">
@@ -140,6 +190,10 @@ modernas para dejar tu vehículo en las mejores condiciones.
 <li>✔ Afinación automotriz</li>
 <li>✔ Servicio eléctrico</li>
 </ul>
+
+<center>
+<img src="logo de mecanico.jpg" alt="Logo mecánico" width="900">
+</center>
 
 </div>
 
@@ -160,7 +214,9 @@ para brindar un servicio rápido, seguro y confiable.
 </p>
 
 <center>
-<img src="https://thumbs.dreamstime.com/b/mec%C3%A1nico-sonriente-con-las-herramientas-75369425.jpg" width="500" alt="Mecánico con herramientas">
+<img src="https://thumbs.dreamstime.com/b/mec%C3%A1nico-sonriente-con-las-herramientas-75369425.jpg"
+width="500"
+alt="Mecánico con herramientas">
 </center>
 
 </div>
@@ -210,13 +266,6 @@ allowfullscreen>
 
 </div>
 
-<footer>
-
-<p>© 2026 Taller Mecánica Rápida | Todos los derechos reservados</p>
-
-<p>Teléfono: 656-153-4867 | Ciudad Juárez, Chihuahua</p>
-
-</footer>
 
 </body>
 </html>
